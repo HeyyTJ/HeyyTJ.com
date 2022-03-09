@@ -6,6 +6,10 @@ a:hover {
   transition: var(--tj-transition);
   color: var(--bs-primary);
 }
+
+.color-white {
+  color: var(--bs-white);
+}
 .fs-22 {
   font-size: calc(1rem + 0.5vw);
   line-height: 1.25;
@@ -104,8 +108,35 @@ img {
 }
 
 /* HERO */
-#section-hero h1 {
+#hero h1 {
   font-weight: 800;
   font-size: calc(2rem + 2.5vw);
   letter-spacing: -0.05em;
+}
+
+/* EXPERTISE */
+
+#expertise {
+  background: linear-gradient(90deg, #fff 50%, #000 50%);
+}
+
+@media (max-width: 992px) {
+  #expertise {
+    background: transparent;
+  }
+}
+
+.list-services {
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  font-size: calc(2rem + 1vw);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.technologies {
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  font-size: calc(1.25rem + 1vw);
 }
