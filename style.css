@@ -1,0 +1,111 @@
+/* GLOBAL */
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: var(--tj-transition);
+  color: var(--bs-primary);
+}
+.fs-22 {
+  font-size: calc(1rem + 0.5vw);
+  line-height: 1.25;
+}
+
+.sub-title {
+  font-size: calc(0.625rem + 0.25vw);
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  line-height: 1.25;
+}
+
+.sub-title span {
+  display: inline-block;
+  font-size: calc(1.625rem + 0.25vw);
+  letter-spacing: -0.05em;
+  font-weight: 700;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+.btn-new {
+  font-weight: 600;
+  font-size: calc(1.25 + 1vw);
+  line-height: 1;
+  letter-spacing: 0.25em;
+  border-radius: 2px;
+  padding: calc(1rem + 0.5vw) calc(1rem + 2vw);
+  display: inline-block;
+}
+@media (max-width: 576px) {
+  .btn-new {
+    width: 100%;
+    text-align: center;
+    margin-bottom: calc(0.5rem + 0.5vw);
+  }
+}
+
+.btn-dark {
+  color: var(--bs-white);
+  border: 2px solid var(--tj-dark);
+  background-color: var(--tj-dark);
+}
+.btn-dark:hover {
+  color: var(--tj-dark);
+  background-color: transparent;
+}
+.btn-blue {
+  color: var(--bs-white);
+  border: 2px solid var(--bs-primary);
+  background-color: var(--bs-primary);
+}
+.btn-blue:hover {
+  background-color: transparent;
+}
+/* HEADER */
+.logo {
+  font-style: normal;
+  font-weight: 800;
+  font-size: calc(1.25rem + 1vw);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--tj-dark);
+}
+
+.header-cta {
+  padding: 0 calc(1rem + 1vw);
+  color: var(--tj-dark);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  float: right;
+  display: block;
+  border: 2px solid var(--tj-dark);
+  border-radius: 5rem;
+  letter-spacing: normal;
+}
+
+.header-cta:hover {
+  border: 2px solid #000;
+  background-color: #000;
+  color: var(--bs-white);
+}
+
+.header-cta svg {
+  margin-right: 0.5rem;
+}
+
+.header-cta:hover svg path {
+  transition: var(--tj-transition);
+  fill: white;
+}
+
+/* HERO */
+#section-hero h1 {
+  font-weight: 800;
+  font-size: calc(2rem + 2.5vw);
+  letter-spacing: -0.05em;
+}
