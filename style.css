@@ -110,7 +110,7 @@ img {
 /* HERO */
 #hero h1 {
   font-weight: 800;
-  font-size: calc(2rem + 2.5vw);
+  font-size: calc(1.65rem + 2.5vw);
   letter-spacing: -0.05em;
 }
 
