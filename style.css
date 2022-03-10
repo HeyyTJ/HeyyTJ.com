@@ -126,6 +126,16 @@ img {
   }
 }
 
+#testimonials {
+  background: linear-gradient(90deg, #000 50%, #fff 50%);
+}
+
+@media (max-width: 768px) {
+  #testimonials {
+    background: transparent;
+  }
+}
+
 .list-services {
   font-weight: 700;
   letter-spacing: -0.05em;
@@ -139,4 +149,43 @@ img {
   font-weight: 700;
   letter-spacing: -0.05em;
   font-size: calc(1rem + 1vw);
+}
+
+.rating {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rating li {
+  display: inline-block;
+}
+
+.hide {
+  opacity: 0 !important;
+}
+#blockquote {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.testimonials blockquote {
+  position: relative;
+}
+.testimonials span {
+  position: absolute;
+  top: 0;
+  left: -7em;
+}
+
+#stats p span {
+  display: block;
+  clear: both;
+  letter-spacing: -0.05em;
+  font-size: calc(1rem + 1.5vw);
+}
+
+#stats p {
+  font-size: calc(0.625rem + 0.25vw);
+  letter-spacing: 0.25em;
+  font-weight: 700;
 }
