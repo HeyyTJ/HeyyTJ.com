@@ -38,9 +38,9 @@ img {
   font-weight: 600;
   font-size: calc(1.25 + 1vw);
   line-height: 1;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.125em;
   border-radius: 2px;
-  padding: calc(1rem + 0.5vw) calc(1rem + 2vw);
+  padding: calc(0.5rem + 0.5vw) calc(1rem + 1.5vw);
   display: inline-block;
 }
 @media (max-width: 576px) {
@@ -60,12 +60,25 @@ img {
   color: var(--tj-dark);
   background-color: transparent;
 }
+.btn-dark:hover svg path {
+  fill: black;
+}
 .btn-blue {
   color: var(--bs-white);
   border: 2px solid var(--bs-primary);
   background-color: var(--bs-primary);
 }
 .btn-blue:hover {
+  background-color: transparent;
+}
+
+.btn-upwork {
+  color: var(--bs-white);
+  border: 2px solid #14a800;
+  background-color: #14a800;
+}
+.btn-upwork:hover {
+  color: #14a800;
   background-color: transparent;
 }
 /* HEADER */
@@ -188,4 +201,26 @@ img {
   font-size: calc(0.625rem + 0.25vw);
   letter-spacing: 0.25em;
   font-weight: 700;
+}
+
+#contact h3 {
+  font-size: calc(1.5rem + 0.5vw);
+  letter-spacing: -0.05em;
+  font-weight: 700;
+}
+
+.social-profile {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-profile li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.social-profile li svg:hover path {
+  fill: var(--bs-primary);
+  transition: var(--tj-transition);
 }
