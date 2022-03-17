@@ -2057,3 +2057,17 @@ img {
   fill: var(--bs-primary);
   transition: var(--tj-transition);
 }
+
+.video-ask {
+  height: 48em;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .video-ask {
+    height: 40em;
+  }
+}
